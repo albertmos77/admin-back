@@ -15,7 +15,7 @@ FROM eclipse-temurin:17-jre
 WORKDIR /app
 
 # Copiar el jar generado desde la etapa de build
-COPY --from=build /app/target/app.jar app.jar
+COPY --from=build /app/target/*.jar app.jar
 
 # Exponer el puerto de la aplicación
 EXPOSE 8080
