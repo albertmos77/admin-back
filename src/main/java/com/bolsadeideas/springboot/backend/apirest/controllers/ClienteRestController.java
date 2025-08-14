@@ -57,7 +57,7 @@ public class ClienteRestController {
 		return clienteService.findAll();
 	}
 
-	@GetMapping("/hola")
+	@GetMapping("/clientes/hola")
 	public String hola() {
 		return "Hola Mundo";
 	}
