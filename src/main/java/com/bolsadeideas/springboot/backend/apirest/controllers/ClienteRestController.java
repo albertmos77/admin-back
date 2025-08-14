@@ -56,6 +56,11 @@ public class ClienteRestController {
 	public List<Cliente> index() {
 		return clienteService.findAll();
 	}
+
+	@GetMapping("/hola")
+	public String hola() {
+		return "Hola Mundo";
+	}
 	
 	@GetMapping("/clientes/page/{page}")
 	public Page<Cliente> index(@PathVariable Integer page) {
